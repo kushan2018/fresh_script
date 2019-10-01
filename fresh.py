@@ -15,10 +15,10 @@ import cutie
 
 def createUserConfig(user, config_path='.config.ini'):
     """
-    Create .config.ini file for Spotify credentials.
+     Create .config.ini file for Spotify credentials.
 
-    Parameters
-    ----------
+     Parameters
+    --------------
     user: User object
         Spotify user object.
 
@@ -32,6 +32,7 @@ def createUserConfig(user, config_path='.config.ini'):
         'client_secret': user.client_secret,
         'username': user.username,
         'playlist_id': user.getPlaylistsAsString(),
+     
         'redirect_uri': user.redirect
     }
 
